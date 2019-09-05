@@ -13,7 +13,7 @@ describe("<Display />", () => {
 
     });
 
-    
+    //tests if strikes display card is on the screen
     test('contains Strikes Display Card', () => {
         // Arrange
         const { getByText } = render(<Display />);
@@ -24,6 +24,7 @@ describe("<Display />", () => {
         // Assertion is if ^^^ is truthy
     });
 
+    //tests if balls display card is on the screen
     test('contains Balls Display Card', () => {
 
         // Arrange
