@@ -1,6 +1,7 @@
 import React from 'react';
 import Display from "./components/Display.js";
 import Dashboard from "./components/Dashboard.js";
+import {useState} from "react";
 import './App.css';
 
 function App() {
@@ -61,6 +62,8 @@ function App() {
 
   return (
     <div className = "App">
+
+      <h2>Baseball App</h2>
 
       <Display strikes = {strikes} balls = {balls}/>
       <Dashboard strikesCount = {strikesCount} ballsCount = {ballsCount} foulCount = {foulCount} hitCount = {hitCount} />
