@@ -7,13 +7,13 @@ function Display (props){
 
             <div className = "strikes-div">
 
-                Strikes: {props.setStrikes}
+                Strikes: {props.strikes}
 
             </div>
 
             <div className = "balls-div">
 
-                Balls: {props.setBalls}
+                Balls: {props.balls}
 
             </div>
 

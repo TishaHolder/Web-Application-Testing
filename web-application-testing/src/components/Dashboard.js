@@ -6,13 +6,13 @@ function Dashboard (props){
 
         <div className = "dashboard-div">
 
-            <button>Strike</button>
+            <button onClick = {props.strikesCount}> Strike </button>
 
-            <button>Ball</button>
+            <button onClick = {props.ballsCount}> Ball </button>
 
-            <button>Foul</button>
+            <button onClick = {props.foulCount}> Foul </button>
 
-            <button>Hit</button>
+            <button onClick = {props.hitCount}> Hit </button>
 
         </div>
 
