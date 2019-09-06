@@ -4,6 +4,42 @@ import Dashboard from "./components/Dashboard.js";
 import {useState} from "react";
 import './App.css';
 
+//***************************test functions*************************************
+export const strikesCount = (strikes) => {
+  //balls and strikes reset to 0 when a player reaches 3 strikes or 4 balls.
+  if(strikes == 3){
+    return 0;
+    
+  }
+  else {
+    return strikes = strikes + 1;
+
+  }
+  
+}
+
+export const ballsCount = (balls) => {
+  //balls and strikes reset to 0 when a player reaches 3 strikes or 4 balls.
+  if(balls == 4){
+    
+    return 0;
+  }
+  else {
+    return balls = balls + 1;
+
+  }
+ 
+}
+
+export const hitCount = (balls, strikes) => {
+
+  //balls and strikes reset to 0 when a hit is recorded.
+  return balls = 0, strikes = 0;
+  
+}
+
+//************************************************************************************************** */
+
 function App() {
 
   const [strikes, setStrikes] = useState(0);
@@ -61,9 +97,7 @@ function App() {
 
 
   return (
-    <div className = "App">
-
-      <h2>Baseball App</h2>
+    <div className = "App">     
 
       <Display strikes = {strikes} balls = {balls}/>
       <Dashboard strikesCount = {strikesCount} ballsCount = {ballsCount} foulCount = {foulCount} hitCount = {hitCount} />

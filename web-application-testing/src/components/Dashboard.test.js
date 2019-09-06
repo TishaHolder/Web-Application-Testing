@@ -2,6 +2,8 @@ import React from "react";
 //import * as rtl from '@testing-library/react'; //rtl - react testing library
 import Dashboard from "./Dashboard.js";
 import { render } from "@testing-library/react";
+import { strikesCount, ballsCount, hitCount } from '../App.js';
+
 
 
 describe ("<Dashboard />", ()=> {
@@ -64,8 +66,24 @@ describe ("<Dashboard />", ()=> {
         // Assertion is if ^^^ is truthy
     });
 
+    test('strikesCount resets strikes to 0 if it is equal to 3', () => {
+        expect(strikesCount(3)).toBe(0);
+        expect(strikesCount(1)).toBe(2);
+    });
+
+    test('ballsCount resets balls to 0 if it is equal to 4', () => {
+        expect(ballsCount(4)).toBe(0);
+        expect(strikesCount(1)).toBe(2);
+    });
+
+    test('hitCount resets balls and strikes to 0', () => {
+        expect(hitCount(4, 2)).toBe(0);
+        expect(hitCount(1, 2)).toBe(0);
+    });
+
+
+         
 
 
     
-
 })

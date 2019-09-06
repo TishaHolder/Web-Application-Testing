@@ -5,15 +5,25 @@ function Display (props){
     return (
         <div className = "display-div">
 
-            <div className = "strikes-div">
+            <h2>Baseball Score Tracker</h2>
 
-                Strikes: {props.strikes}
+            <div className = "score-board-div">
 
-            </div>
+                <div className = "strikes-div">
 
-            <div className = "balls-div">
+                    <p>Strikes</p>
+                    
+                    <p>{props.strikes}</p>
 
-                Balls: {props.balls}
+                </div>
+
+                <div className = "balls-div">
+
+                    <p> Balls </p> 
+                    
+                    <p> {props.balls} </p>
+
+                </div>
 
             </div>
 

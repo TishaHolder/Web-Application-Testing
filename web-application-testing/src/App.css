@@ -1,33 +1,93 @@
 .App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  
+}
+
+.display-div {
+  display: flex;
+  flex-direction: column;  
+  align-items: space-between;
+  width: 58%;
+  margin:0 auto;
+  background-color: #0b5402;
+  color: white;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+  padding: 0 5rem 5rem 5rem;
+  border: 4px solid #aaaaaa;
+  border: 1px solid blue;
+}
+
+.score-board-div {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  /* height: 20rem; */
+}
+
+.strikes-div,
+.balls-div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+
+.strikes-div {
+  background-color: #656565;
+}
+
+.balls-div {
+  background-color: #af750a;
+}
+
+h2, p{
+  text-transform: uppercase;
+  font-size: 3rem;
+ 
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.dashboard-div {
+  width: 58%;
+  text-align: center;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  width: 10vw;
+  background: #2e4bb4;
   color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.507);
+  margin: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #4862c4;
 }
+button:active {
+  transition: all .1s;
+  background: #798ac7;
+  transform: translateY(3px);
+  box-shadow: none;
+}
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
