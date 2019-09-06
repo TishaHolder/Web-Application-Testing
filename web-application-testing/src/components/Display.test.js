@@ -13,6 +13,19 @@ describe("<Display />", () => {
 
     });
 
+    //tests if baseball app header is on the screen
+    test('contains Baseball App Header', () => {
+
+    // Arrange
+    const { getByText } = render(<Display />);
+
+    // Act - getting the node by text
+    getByText(/Baseball Score Tracker/i);
+    
+    // Assertion is if ^^^ is truthy
+    });
+
+
     //tests if strikes display card is on the screen
     test('contains Strikes Display Card', () => {
         // Arrange
